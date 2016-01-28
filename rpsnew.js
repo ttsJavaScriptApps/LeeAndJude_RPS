@@ -7,7 +7,7 @@ function getHand(){
 ​
 var player1 = {
  	name: 'Jude',
- 	hand: getHand
+ 	hand: getHand,
 }
 ​
 var player2 = {
@@ -18,41 +18,47 @@ var player2 = {
 function playRound(player1, player2){
  	player1.hand();
  	player2.hand();
-​
-//​ (p1Choice === 0 && p2Choice === 2) ||
-// (p1Choice === 1 && p2Choice === 0) ||
-// (p1Choice === 2 && p2Choice === 2) {
-//   console.log( player1.name + " wins");
-// }   else {
-//    console.log( player1.name + " wins");
-//}
+
+  ​ if ((p1Choice === 0 && p2Choice === 2) ||
+    (p1Choice === 1 && p2Choice === 0) ||
+    (p1Choice === 2 && p2Choice === 2)) {
+      console.log( player1.name + " wins");
+}   else {
+      console.log( player1.name + " wins");
+}
+
+
+
+
+
+
 
 
 // // We need to separate these into 2 functions
-if (p1Choice === p2Choice){
-		console.log("You tied play again!");
- 		 return nil;
- 	} else if p1Choice === 0 && p2Choice === 1){
- 		console.log("Paper covers rock! " + player2.name + " wins");
- 		return player2;
- 	} else if p1Choice === 0 && p2Choice === 2){
- 		console.log("Rock smashes scissors! " + player1.name + " wins");
- 		return player1;
- 	} else if p1Choice === 1 && p2Choice === 0){
- 		console.log("Paper covers rock! " + player1.name + " wins");
- 		return player1;
- 	} else if p1Choice === 1 && p2Choice === 2){
- 		console.log("Scissors cuts paper! " + player2.name + " wins");
- 		return player2;
- 	} else if p1Choice === 2 && p2Choice === 0){
- 		console.log("Rock smashes scissors! " + player2.name + " wins");
- 		return player2;
- 	} else if p1Choice === 2 && p2Choice === 1){
- 		console.log("Scissors cuts paper! " + player1.name + " wins");
- 		return player1;
- 	}
-}
-​
+// if (p1Choice === p2Choice){
+// 		console.log("You tied play again!");
+//  		 return nil;
+//  	} else if p1Choice === 0 && p2Choice === 1){
+//  		console.log("Paper covers rock! " + player2.name + " wins");
+//  		return player2;
+//  	} else if p1Choice === 0 && p2Choice === 2){
+//  		console.log("Rock smashes scissors! " + player1.name + " wins");
+//  		return player1;
+//  	} else if p1Choice === 1 && p2Choice === 0){
+//  		console.log("Paper covers rock! " + player1.name + " wins");
+//  		return player1;
+//  	} else if p1Choice === 1 && p2Choice === 2){
+//  		console.log("Scissors cuts paper! " + player2.name + " wins");
+//  		return player2;
+//  	} else if p1Choice === 2 && p2Choice === 0){
+//  		console.log("Rock smashes scissors! " + player2.name + " wins");
+//  		return player2;
+//  	} else if p1Choice === 2 && p2Choice === 1){
+//  		console.log("Scissors cuts paper! " + player1.name + " wins");
+//  		return player1;
+//  	}
+// }
+// ​
 ​
 ​
 // console.log(playRound(player1, player2));
