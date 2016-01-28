@@ -22,7 +22,7 @@ var playRound = function(player1, player2){
     console.log("It's a tie - no winner");
   } else if ((player1.hand === 0 && player2.hand === 2) ||
     (player1.hand === 1 && player2.hand === 0) ||
-    (player1.hand === 2 && player2.hand === 2)) {
+    (player1.hand === 2 && player2.hand === 1)) {
       console.log( player1.name + " wins");
     }   else {
       console.log( player2.name + " wins");
