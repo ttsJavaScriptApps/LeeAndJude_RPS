@@ -1,6 +1,6 @@
 var hands = ["rock", "paper", "scissors"];
 
-var getHand function() {
+var getHand = function() {
   return hands[parseInt(Math.random()*10)%3];
 }
 ​
@@ -14,11 +14,13 @@ var player2 = {
  	hand: getHand()
 }
 ​
-function playRound(player1, player2){
+var playRound = function(player1, player2){
  	player1.hand();
  	player2.hand();
 
-  ​ if ((player1.hand === 0 && player2.hand === 2) ||
+  if (player1.hand === player2.hand){
+    console.log("It's a tie - no winner");
+  } else if ((player1.hand === 0 && player2.hand === 2) ||
     (player1.hand === 1 && player2.hand === 0) ||
     (player1.hand === 2 && player2.hand === 2)) {
       console.log( player1.name + " wins");
