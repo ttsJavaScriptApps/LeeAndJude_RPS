@@ -1,32 +1,31 @@
-
 var hands = ['rock', 'paper', 'scissors'];
 ​
 function getHand(){
-  return hands[parseInt(Math.random()*10)%3];
+  return hands [parseInt(Math.random()*10)%3];
 }
 ​
 var player1 = {
- 	name: 'Jude',
- 	hand: getHand,
+ 	name: "Jude",
+ 	hand: getHand()
 }
 ​
 var player2 = {
- 	name: 'Lee',
- 	hand: getHand
+ 	name: "Lee",
+ 	hand: getHand()
 }
 ​
 function playRound(player1, player2){
  	player1.hand();
  	player2.hand();
 
-  ​ if ((p1Choice === 0 && p2Choice === 2) ||
-    (p1Choice === 1 && p2Choice === 0) ||
-    (p1Choice === 2 && p2Choice === 2)) {
+  ​ if ((player1.hand === 0 && player2.hand === 2) ||
+    (player1.hand === 1 && player2.hand === 0) ||
+    (player1.hand === 2 && player2.hand === 2)) {
       console.log( player1.name + " wins");
-}   else {
-      console.log( player1.name + " wins");
+    }   else {
+      console.log( player2.name + " wins");
+    }
 }
-
 
 
 
