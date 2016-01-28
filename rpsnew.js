@@ -1,3 +1,11 @@
+// var player1score = 0;
+// var player2score = 0;
+
+
+// while (player1score < 5 || player2score < 5) {
+
+// var playGame = function ()
+
 var hands = ["rock", "paper", "scissors"];
 
 var getHand = function() {
@@ -20,15 +28,18 @@ var playRound = function(player1, player2){
 
   if (player1.hand === player2.hand){
     console.log("It's a tie - no winner");
-  } else if ((player1.hand === 0 && player2.hand === 2) ||
-    (player1.hand === 1 && player2.hand === 0) ||
-    (player1.hand === 2 && player2.hand === 1)) {
+  } else if ((player1.hand == 0 && player2.hand == 2) ||
+    (player1.hand == 1 && player2.hand == 0) ||
+    (player1.hand == 2 && player2.hand == 1)) {
+      player1score = player1score +1;
       console.log( player1.name + " wins");
     }   else {
+      player2score = player2score +1;
       console.log( player2.name + " wins");
     }
 }
 
+// }
 
 
 
