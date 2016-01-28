@@ -1,7 +1,7 @@
-var hands = ['rock', 'paper', 'scissors'];
-​
-function getHand(){
-  return hands [parseInt(Math.random()*10)%3];
+var hands = ["rock", "paper", "scissors"];
+
+var getHand function() {
+  return hands[parseInt(Math.random()*10)%3];
 }
 ​
 var player1 = {
