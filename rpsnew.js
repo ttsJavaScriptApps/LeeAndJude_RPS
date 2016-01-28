@@ -19,7 +19,15 @@ function playRound(player1, player2){
  	player1.hand();
  	player2.hand();
 ​
-​
+//​ (p1Choice === 0 && p2Choice === 2) ||
+// (p1Choice === 1 && p2Choice === 0) ||
+// (p1Choice === 2 && p2Choice === 2) {
+//   console.log( player1.name + " wins");
+// }   else {
+//    console.log( player1.name + " wins");
+//}
+
+
 // // We need to separate these into 2 functions
 if (p1Choice === p2Choice){
 		console.log("You tied play again!");
